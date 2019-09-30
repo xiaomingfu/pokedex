@@ -12,8 +12,18 @@
     font-size: 80%;
 }
 
+.Pokecard-title {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.Pokecard img {
+transition: all ease 500ms;
+}
 .Pokecard img:hover{
-    
+    transform: scale(1.25);
+    opacity: 0.8;
 }
 
 .Pokecard-img {
