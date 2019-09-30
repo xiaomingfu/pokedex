@@ -25,10 +25,11 @@ class Pokegame extends Component{
         }
         let exp1 = hand1.reduce((exp, pokemon) => (exp + pokemon.base_experience),0);
         let exp2 = hand2.reduce((exp, pokemon) => (exp + pokemon.base_experience), 0)
+
         return (
             <div>
-                <Pokedex pokemon={hand1} exp={exp1}/>
-                <Pokedex pokemon={hand2} exp={exp2}/>
+                <Pokedex pokemon={hand1} exp={exp1} isWinner={exp1>exp2}/>
+                <Pokedex pokemon={hand2} exp={exp2} isWinner={exp1<exp2}/>
             </div>
         )
     }
